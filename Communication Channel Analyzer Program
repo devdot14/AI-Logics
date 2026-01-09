@@ -1,0 +1,11 @@
+s=input()
+s1=s.lowercase()
+c=0
+for i in range(len(s1)):
+  r=""
+  for j in range(i,len(s1)):
+    if s1[j] in r:
+      break
+    r+=s1[j]
+    c=max(c,len(r))
+print(c)
